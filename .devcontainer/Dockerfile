@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     git \
     curl \
     openssh-client \
+    can-utils \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the setup.sh script into the container
