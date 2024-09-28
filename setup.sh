@@ -12,4 +12,3 @@ source /opt/ros/jazzy/setup.bash
 
 # Navigate to the root of the workspace and build it using colcon
 cd /root/ros2_ws
-colcon build

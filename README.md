@@ -3,7 +3,7 @@ This repository contains dev container for ROS2, that will set up development en
 
 ## Getting Started
 
-To set up the development environment, clone this repository and open it in Visual Studio Code. Make sure to have the Remote - Containers extension installed.
+To set up the development environment, clone this repository and open it in Visual Studio Code. Make sure to have the **Remote Development** extension installed.
 
 ## Usage
 

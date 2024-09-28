@@ -14,6 +14,9 @@
             "settings": {},
             "extensions": [
                 "ms-vscode.cpptools",
+                "ms-vscode.cpptools-themes",
+                "twxs.cmake",
+                "ms-iot.vscode-ros",
                 "ms-python.python",
                 "ms-python.vscode-pylance"
             ]
