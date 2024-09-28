@@ -1,0 +1,23 @@
+{
+    "name": "ROS2 Jazzy Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "runArgs": [
+        "--network=host"  // Allows the container to share the host network (for ping, etc.)
+    ],
+    "workspaceFolder": "/root/ros2_ws",
+    "postCreateCommand": "/root/setup.sh",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
