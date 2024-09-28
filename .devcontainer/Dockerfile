@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     net-tools \
     git \
     curl \
+    openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the setup.sh script into the container
