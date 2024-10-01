@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     openssh-client \
     can-utils \
+    nano \
+    python3-requests \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the setup.sh script into the container
