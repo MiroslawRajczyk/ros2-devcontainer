@@ -9,7 +9,7 @@ To set up the development environment, clone this repository and open it in Visu
 
 1. Open Visual Studio Code.
 2. Open **Extensions** tab.
-3. Install **Remove Development** extension.
+3. Install **Remote Development** extension.
 4. Close Visual Studio Code - it will need to be opened again to properly load newly installed extensions.
 5. Clone this repository.
 6. Open this repository in Visual Studio Code.
