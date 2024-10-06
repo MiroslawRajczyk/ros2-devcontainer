@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     can-utils \
     nano \
     python3-requests \
+    ros-jazzy-rosbridge-suite \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the setup.sh script into the container
