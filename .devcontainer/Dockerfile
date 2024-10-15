@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     python3-tornado \
     libpcl-dev \
     nmap \
-    ibjsoncpp-dev \
+    libjsoncpp-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the setup.sh script into the container
