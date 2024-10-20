@@ -5,7 +5,21 @@ This repository contains dev container for ROS2, that will set up development en
 
 To set up the development environment, clone this repository and open it in Visual Studio Code. Make sure to have the **Remote Development** extension installed.
 
-## Usage
+## Accessing Host Display from devcontainer
+
+1. **Ensure X Server is running**: On your host machine, make sure that X server is running.
+    - If you're on Linux, it should be by default.
+    - If you're using WSL2 (Windows), you need an X server like **VcXsrv** or **Xming**.
+
+2. **Grant access to X Server**: Before starting the container, run this command on your host to allow Docker to use your display:
+
+        xhost +local:root
+    Now you should be ready to run the devcontainer as usual - and it should have access to display.
+    You can verify this by running this command inside the devcontainer:
+
+        source /opt/ros/jazzy/setup.bash && rviz2
+
+## Running the devcontainer
 
 1. Open Visual Studio Code.
 2. Open **Extensions** tab.
