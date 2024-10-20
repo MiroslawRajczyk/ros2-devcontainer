@@ -5,7 +5,11 @@
         "context": ".."
     },
     "runArgs": [
-        "--network=host"  // Allows the container to share the host network (for ping, etc.)
+        "--net", "host",
+        "-e", "DISPLAY=${localEnv:DISPLAY}",
+        "-e", "XAUTHORITY=/tmp/.Xauthority",
+        "-v", "${localEnv:HOME}/.Xauthority:/tmp/.Xauthority",
+        "--privileged"
     ],
     "workspaceFolder": "/root/ros2_ws",
     "postCreateCommand": "/root/setup.sh",
