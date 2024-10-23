@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     libpcl-dev \
     nmap \
     libjsoncpp-dev \
+    ros-jazzy-ffmpeg-image-transport \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the setup.sh script into the container
