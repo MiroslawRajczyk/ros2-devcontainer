@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     libpcl-dev \
     nmap \
     libjsoncpp-dev \
+    ros-jazzy-rosbridge-suite \
     ros-jazzy-image-transport-plugins \
     ros-jazzy-ffmpeg-image-transport \
     ros-jazzy-pcl-conversions \
