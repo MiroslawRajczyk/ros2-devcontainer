@@ -1,5 +1,5 @@
 # Start from the ROS 2 Jazzy desktop image
-FROM osrf/ros:jazzy-desktop-full
+FROM osrf/ros:humble-desktop-full
 
 # Install additional system utilities
 RUN apt-get update && apt-get install -y \
@@ -17,10 +17,10 @@ RUN apt-get update && apt-get install -y \
     libpcl-dev \
     nmap \
     libjsoncpp-dev \
-    ros-jazzy-rosbridge-suite \
-    ros-jazzy-image-transport-plugins \
-    ros-jazzy-ffmpeg-image-transport \
-    ros-jazzy-pcl-conversions \
+    ros-humble-rosbridge-suite \
+    ros-humble-image-transport-plugins \
+    ros-humble-ffmpeg-image-transport \
+    ros-humble-pcl-conversions \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the setup.sh script into the container
@@ -35,5 +35,5 @@ RUN mkdir -p /root/ros2_ws/src
 # Set the workspace as the working directory
 WORKDIR /root/ros2_ws
 
-# Source the ROS 2 Jazzy setup
-RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+# Source the ROS 2 Humble setup
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc

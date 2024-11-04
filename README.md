@@ -17,7 +17,7 @@ To set up the development environment, clone this repository and open it in Visu
     Now you should be ready to run the devcontainer as usual - and it should have access to display.
     You can verify this by running this command inside the devcontainer:
 
-        source /opt/ros/jazzy/setup.bash && rviz2
+        source /opt/ros/humble/setup.bash && rviz2
 
 ## Running the devcontainer
 
