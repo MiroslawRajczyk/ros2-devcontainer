@@ -16,12 +16,16 @@ RUN apt-get update && apt-get install -y \
     python3-tornado \
     libpcl-dev \
     nmap \
+    htop \
+    tree \
+    libc++-dev \
+    libc++abi-dev \
     libjsoncpp-dev \
+    ros-humble-rmw-cyclonedds-cpp \
     ros-humble-rosbridge-suite \
     ros-humble-image-transport-plugins \
     ros-humble-ffmpeg-image-transport \
-    ros-humble-pcl-conversions \
-    && rm -rf /var/lib/apt/lists/*
+    ros-humble-pcl-conversions
 
 # Copy the setup.sh script into the container
 COPY setup.sh /root/
@@ -37,3 +41,5 @@ WORKDIR /root/ros2_ws
 
 # Source the ROS 2 Humble setup
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN echo "source /root/ros2_ws/install/setup.bash" >> ~/.bashrc
+RUN echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
