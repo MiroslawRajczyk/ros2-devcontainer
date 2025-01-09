@@ -25,7 +25,11 @@ RUN apt-get update && apt-get install -y \
     ros-humble-rosbridge-suite \
     ros-humble-image-transport-plugins \
     ros-humble-ffmpeg-image-transport \
-    ros-humble-pcl-conversions
+    ros-humble-pcl-conversions \
+    ros-humble-depthai-ros \
+    ros-humble-moveit \
+    ros-humble-ros2-control \
+    ros-humble-ros2-controllers
 
 # Copy the setup.sh script into the container
 COPY setup.sh /root/

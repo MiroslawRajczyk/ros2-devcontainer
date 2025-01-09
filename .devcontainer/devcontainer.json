@@ -9,7 +9,8 @@
         "-e", "DISPLAY=${localEnv:DISPLAY}",
         "-e", "XAUTHORITY=/tmp/.Xauthority",
         "-v", "${localEnv:HOME}/.Xauthority:/tmp/.Xauthority",
-        "--device" "/dev/video0",
+        "--device=/dev/video0",
+        "--device=/dev/ttyUSB0",
         "--gpus", "all",
         "--privileged"
     ],
